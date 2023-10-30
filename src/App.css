@@ -441,15 +441,14 @@ border: none;
   
 
   .error {
-    top: 854px;
-    color: #fd443a;
+    color: #FD443A;
+
     font-family: Poppins;
     font-size: 20px;
-    position: absolute;
     font-style: normal;
     font-weight: 500;
-    line-height: 100%;
-}
+    line-height: 100%; /* 20px */
+  }
   .email-arr{
     display: inline-flex;
 flex-direction: column;
