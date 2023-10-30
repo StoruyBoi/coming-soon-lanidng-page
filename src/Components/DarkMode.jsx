@@ -10,7 +10,7 @@ export default function DarkMode() {
   }
   const toggleTheme=(e)=>{
     setIsDarkMode(!isDarkMode);
-
+    
     if(e.target.checked) setDarkMode();
     else setLightMode()
   }
