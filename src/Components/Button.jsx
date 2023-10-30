@@ -97,7 +97,7 @@ function EmailForm() {
         <input type="email" value={email} onChange={handleEmailChange} />
        {isValid && <div className="error">invalid email</div>}
         </div>
-   
+   <div className="button-cont">
       <button onClick={handleSubmit} disabled={isLoading || isRedirecting   }>
         {isLoading ? (
           <div className="loader"></div>
@@ -107,9 +107,8 @@ function EmailForm() {
           'Notify Me'
         )}
       </button>
-      {isLoading && !isValid && !isRedirecting && (
-        <div className="tick">&#10003;</div>
-      )}
+      </div>
+     
     </div>
     </div>
    

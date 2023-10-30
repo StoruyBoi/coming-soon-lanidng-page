@@ -17,6 +17,7 @@
 --light-theme-for-rocket:#4D4D4D;
 --light-theme-button-text:rgba(255, 255, 255, 0.50);
 --light-theme-for-nav-bar-bg: #330F29;
+--light-theme-for-nav-bar-bg: #f6d5ed;
 }
 
 [data-theme="dark"]{
@@ -32,6 +33,7 @@
     --light-theme-for-input-color:#808080;
     --light-theme-for-rocket:#FF00B8;
     --light-theme-button-text:rgba(15, 15, 15, 0.50);
+    --light-theme-for-nav-bar-bg: #f6d5ed;
     --light-theme-for-nav-bar-bg: #330F29;
 }
 * {
@@ -94,7 +96,6 @@ to{
 }
 
     }
-
 
 
 
@@ -255,7 +256,7 @@ gap: 24px;
 .input-ar{
     display: flex;
 justify-content: center;
-align-items: center;
+
 gap: 14px;
 }
 .input-ar input{
@@ -644,7 +645,10 @@ font-size: 3vw;
 }
 
 @media screen and (max-width:360px) {
-      
+    .content nav{
+        background: var(--light-theme-for-nav-bar-bg);
+        box-shadow: 0px 2px 12px 0px rgba(255, 255, 255, 0.20);
+    }
         .title-icon h1{
             font-size: 24px;
             line-height: 120%;
