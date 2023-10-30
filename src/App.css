@@ -711,6 +711,14 @@ width: 100%;
     .input-ar button{
         width: 100%;
     }
+    .box {
+        width: 200px;
+        height: 200px;
+        z-index: 999;
+        position: absolute;
+        filter: blur(350px);
+        border-radius: 460px;
+    }
 }
 
 
